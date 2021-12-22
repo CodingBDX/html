@@ -31,6 +31,7 @@ https://tributepagebordeauxbdx.netlify.app/
               - [x]  responsive design and media queries
               - [x]  Sass
               - [x] bootstrap
+              - [x] bulma
 
 
 
