@@ -4,8 +4,11 @@
 
 <hr>
 <h3>-:heartbeat: Website or training, i'm coding</h3>
-https://tributepagebordeauxbdx.netlify.app/
-https://gifted-feynman-fd4510.netlify.app/
+https://tributecodingbdx.herokuapp.com/index.html
+
+https://landingcodingbdx.herokuapp.com/index.html
+
+https://surveycodingbdx.herokuapp.com/index.html
  
 <h3>-:star2: courses</h3>
 
