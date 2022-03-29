@@ -1,0 +1,95 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+font-family: Poppins ital;
+}
+
+.header {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-1 {
+  flex-basis: 1fr;
+  max-width: 50%;
+  flex-grow: 1;
+  background-image: url('https://images.unsplash.com/photo-1601039628455-1e4622221635?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=767&q=80');
+  background-size: cover;
+  background-position: center;
+}
+
+.col-2 {
+  flex-basis: 1fr;
+  max-width: 50%;
+  flex-grow: 1;
+  padding: 3rem 3rem;
+}
+.col-2 ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.col-2 ul li a{
+  display: inline-block;
+  color: blueviolet;
+  text-decoration: none;
+  font-size: 1.2rem;
+  
+}
+
+.btn {
+  background-color: blueviolet;
+  color: white !important;
+  border-radius: 1rem;
+  padding: .7rem;
+  transition: .4s ease-in;
+}
+.btn:hover {
+  transform: translateY(-2rem);
+}
+.right-text{
+padding: 2rem;
+margin:40% 0;
+}
+
+.nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .7em;
+}
+
+
+
+.nav .logo a{
+  color: white;
+  font-size: 3em;
+  
+  font-weight: bolder;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.nav  i{
+  color: white;
+  font-size: 3em;
+}
+
+.col-1 .left-text {
+  width: 90%;
+  color: white;
+  padding: 0 2rem 0 2rem;
+  margin: 40% .5em 2em .5em;
+}
+
+.col-1 .left-text h1 {
+  font-size: 3rem;
+  text-align: center;
+}
