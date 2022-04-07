@@ -1,0 +1,127 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+  outline: none;
+  border: none;
+  text-transform: uppercase;
+  transition: .4s ease-in;
+  text-decoration: none;
+}
+
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+}
+
+.header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: .2em solid gold;
+  padding: .6em 0;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+
+}
+.header .navbar a {
+  font-size: 1.2em;
+  color: wheat;
+  padding: 0 .5em;
+  transition: .2s ease-in;
+}
+
+.header .navbar a:hover {
+  color: white;
+  border-bottom: .2em solid yellowgreen;
+letter-spacing: .2em;
+}
+
+#menu-btn {
+  display: none;
+}
+ .header .search-form {
+   position: absolute;
+   top: 40%;
+   right: 5em;
+   display: flex;
+   align-items: center;
+   
+ }
+
+ .header .search-form input {
+   padding: .4em  0 .4em .5em;
+   font-weight: bolder;
+ }
+.header .cart-items-container {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  height: calc(100vh - 9em);
+  width: 15em;
+  background-color: whitesmoke;
+  padding: 1em 1em;
+  margin: 1em .5em;
+border-radius: .7em;
+}
+
+.header .cart-items-container .cart-item {
+position: relative;
+margin: .5em  ;
+display: flex;
+width: 100%;
+align-items: center;
+}
+
+.header .cart-items-container .cart-item .fa-times {
+  position: absolute;
+  top: .2em;
+  right: .2em;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+.header .cart-items-container .cart-item .fa-times:hover {
+color: gold;
+}
+
+.header .cart-items-container .cart-item img {
+  height: 7rem;
+}
+
+.header .cart-items-container .cart-item h3 {
+font-size: 1.érem;
+color: gold;
+padding-bottom: .5rem;
+}
+
+.header .cart-items-container .cart-item .price {
+font-size: 1rem;
+color: gainsboro;
+}
+
+.header .cart-items-container  .btn {
+margin-top: 1rem;
+display: inline-block;
+font-size: 1..4rem;
+margin: auto;
+width: 100%;
+text-align: center;
+background-color: coral;
+color: white;
+padding: .8em .4em;
+  transition: .3s;
+
+}
+
+.header .cart-items-container  .btn:hover {
+transform: translateY(-2rem) scale(1.3);
+
+}

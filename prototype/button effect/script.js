@@ -26,3 +26,19 @@ buttons.forEach(button => {
   })
   
 });
+
+
+var battery = navigator.battery || navigator.mozBattery || navigator.webkitBattery;
+
+function updateBatteryStatus() {
+  alert("Battery status: " + battery.level * 100 + " %");
+
+  if (battery.charging) {
+    alert("Battery is charging");
+  }
+}
+
+battery.addEventListener("chargingchange", updateBatteryStatus);
+battery.addEventListener("levelchange", updateBatteryStatus);
+console.log(battery);
+updateBatteryStatus();

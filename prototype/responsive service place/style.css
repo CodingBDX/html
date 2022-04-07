@@ -1,0 +1,65 @@
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: darkorchid;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  flex-wrap: wrap;
+  
+}
+
+.serviceBox {
+  position: relative;
+  overflow: hidden;
+  width: 18em;
+  height: 18em;
+  background-color: blueviolet;
+  border-radius: .6em;
+}
+
+.icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: brown;
+  transition: .5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.serviceBox:hover .icon {
+  top: 4em;
+  left:calc(50% - 2.5vw);
+  width: 4em;
+  height: 4em;
+  border-radius: 50%;
+
+}
+
+.icon ion-icon {
+  color: white;
+  font-size: 2em;
+}
+
+.content {
+  position: relative;
+  margin: 10em 0 0 0;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+
+}
