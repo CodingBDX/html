@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@700&display=swap');
+
+* {
+    font-family: 'Dosis';
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    width: 80%;
+    margin: auto;
+
+}
+
+.navbar  {
+    display: flex;
+    align-items: center;
+    margin: 4em auto;
+}
+.title {
+    font-size: 2em;
+    color: plum;
+}
+
+ul {
+    flex: 1;
+    text-align: right;
+}
+
+ul li {
+    display: inline-block;
+    list-style: none;
+    text-transform: uppercase;
+    margin: 0 0.6em;
+    position: relative;
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li a::after {
+    content: '';
+    width: 0;
+    height: 0.4em;
+    position: absolute;
+    background-color: plum;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -20%;
+    transition: 0.5s;
+}
+
+ul li a:hover::after {
+width: 100%;
+}
+
+.navbar-icons {
+    color: plum;
+    font-size: 1.3em;
+    margin-left: 2em;
+}
+
+.navbar-icons i {
+    margin: 0.3em;
+}
+
+.banner {
+    display: flex;
+    margin-top: 2em;
+        
+
+}
+.left-column, .right-column {
+    flex-basis: 50%;
+}
+
+.right-column img {
+    width: 100%;
+}
+
+.search-box {
+    display: flex;
+    width: 40%;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #ddd;
+text-align: center;
+    margin: 10px 0 30px;
+}
+.search-box i  {
+    font-size: 2.2em;
+    width: 3em;
+    
+    color: plum;
+}
+
+.search-box input {
+    border: 0;
+    outline: none;
+    width: 100%;
+}
+
+.left-column h1 {
+    font-size: 3em;
+    color: plum;
+    margin-bottom: 0.3em;
+    text-align: center;
+}
+
+.left-column h3 {
+    font-size: 1.3em;
+    font-family: 'Courier New', Courier, monospace;
+    color: plum;
+}
+
+.left-column p {
+    font-size: 0.6em;
+    font-family: 'Courier New', Courier, monospace;
+    color: #999;
+    text-transform: uppercase;
+    margin: 2em;
+}
+.social-icons {
+    margin-top: 2em;
+    width: 100%;
+    text-align: center;
+}
+.social-icons i {
+    font-size: 1.6em;
+
+    color: #999;
+    margin-left: 0.4em;
+   
+
+}
+
+
+/* mobile */
+@media only screen and (min-width : 320px) and (max-width : 767px) {
+    
+
+.left-column,
+.right-column {
+   flex-basis: 100%;
+}
+
+.banner {
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.navbar ul  {
+    display: none;
+}
+.navbar-icons {
+    margin-left: 50%;
+    display: inline-block;
+}
+}
