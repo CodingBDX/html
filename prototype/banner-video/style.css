@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Tapestry&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Tapestry';
+}
+
+.sec {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+}
+
+.sec .dot {
+    position: absolute;
+    width: 2vw;
+    height: 5vh;
+    background-color: azure;
+    border-radius: 50%;
+transform: translate(-50%, -50%);
+cursor: default;
+transition: box-shadow 0.5s;
+}
+
+.dot::before {
+    content: 'light mode';
+    position: absolute;
+    top:50%;
+    left: 1em;
+    white-space: nowrap;
+    transform: translateY(-50%);
+    color: azure;
+    font-size: 1.8em;
+}
+
+.dot.active::before {
+    content: 'dark mode';
+    color: black;
+
+}
+
+.sec .dot.active {
+    background: black;
+    border: 2px solid black;
+}
+
+.sec .dot:active {
+    box-shadow: 0 0 0 200vh white;
+    border: 2px solid black;
+}
+.sec .dot.active:active {
+    box-shadow: 0 0 0 200vh black;
+    border: 2px solid white;
+}
+
+.sec h2 {
+    position: absolute;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    font-size: 40vw;
+    align-items: center;
+    color: white;
+    background-color: black;
+    user-select: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    mix-blend-mode: multiply;
+}
+
+.sec.active h2 {
+    color: black;
+    background-color: azure;
+}
+
+.sec video {
+    position: absolute;
+    mix-blend-mode: hard-light;
+ 
+}
