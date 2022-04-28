@@ -28,3 +28,25 @@ avec une duration de 0.5s au survol
 
 ## flex scinder ecran en 2
 un flex sur le parents et sur les 2 enfants un flex-basis:50%;
+
+ensuite il y a des width100% pour prendre l'espace dans les div
+
+## icon dans search 
+
+une façon jolie d'afficher une search bar avec un border-bottom
+`
+.search-box {
+    display: flex;
+    width: 40%;
+    padding-bottom: 3px;
+    border-bottom: 1px solid #ddd;
+text-align: center;
+    margin: 10px 0 30px;
+}
+.search-box i  {
+    font-size: 2.2em;
+    width: 3em;
+    
+    color: plum;
+}
+`
