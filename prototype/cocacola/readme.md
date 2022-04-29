@@ -31,3 +31,15 @@ text-decoration: none pour enlever le surlignage un petit letter-spacing pour ec
 nous sortons de la div header, du coup nous mettons en `position:absolute` puis nous indiquons l'emplacement a savoir bottom:1em et left:1em puis nous centrons l'elements
 nous lui impliquons un petit effect dessus, `transition: 0.3s ease-in-out
 puis sur le hover un transform:translateY pour faire bouger au survol de la souris vers le haut sur l'axe Y
+
+## slide
+nous utilisons une bibliotheque js swiper avec un flex-end
+`.content .img-box {
+    display: flex;
+    width: 45vw;
+    height: 70vh;
+    margin-top: 5em;
+    
+    justify-content: flex-end;
+}`
+pour bien le positionner a la fin
