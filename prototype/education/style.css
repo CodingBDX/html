@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+
+* {
+
+    font-family: 'Rubik',
+    sans-serif;
+
+    text-decoration: none;
+    border: none;
+
+    margin: 0;
+    padding:0;
+    outline: 0;
+    transition: .2s linear;
+}
+
+html {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 1.4em;
+}
+
+::-webkit-scrollbar {
+    height: .5em;
+    width: 
+    1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background-color: greenyellow;
+}
+
+body {
+    background-color: #58BF4C;
+}
+
+.section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: azure;
+}
+
+.header .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    padding: .6em 0;
+}
+
+.header .flex .logo {
+    font-size: 1.9em;
+    color: greenyellow;
+    padding: 0 .5em;
+}
+
+.header .flex .navbar {
+    font-size: 1.2em;
+    color: blueviolet;
+    text-transform: uppercase;
+    margin-left: .6em;
+    font-weight: 900;
+}
+
+.header .flex .navbar a:hover {
+    color: violet;
+}
+
+#menu-btn {
+    font-size: 1.8em;
+    padding: 0 .8em;
+}
+
+@media (max-width:991px) {
+html {
+    font-size: 55%;
+}
+}
+
+
+@media (max-width:445px) {
+    html {
+        font-size: 50%;
+    }
+}
+
+@media (max-width:758px) {
+    #menu-btn {
+        display: inline-block;
+    }
+
+    .header .flex .navbar {
+        position: absolute;
+        top:99%;
+        right: 0;
+        left: 0;
+    }
+
+    .header .flex .navbar a{
+        position: block;
+        margin: 2rem;
+    }
+}
+
+.home .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1em;
+}
+
+.home .row .content {
+    flex: 1 1 40rem;
+    text-align: center;
+    color: aliceblue;
+    padding: 1.5em 1.5em;
+    font-size: 1.6em;
+}
+
+.home .row .image {
+    flex: 1 1 40rem;
+   
+   
+}
+
+.home .row .image svg {
+   width: 100%;
+    margin-top: 0;
+}
+
+.home .row .content h3 {
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 1.9em;
+}
+
+.courses .slide {
+    width: 30em;
+    background-color: chartreuse;
+    text-align: center;
+    margin-bottom: 4rem;
+    padding: 1.2em;
+}
+
+.courses .slide svg {
+    height: 25rem;
+    width: 100%;
+}
+
+.courses .slide h3 {
+    color: white;
+    font-size: 2rem;
+}
+.courses .slide p {
+    color: white;
+    font-size: 1.2em;
+}
+
+.swiper {
+    
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slider {
+    
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper-slide svg {
+    margin-right: .5em;
+    padding: 2em !important;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

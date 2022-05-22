@@ -1,0 +1,54 @@
+.nav-list {
+    border: 4px solid black;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: nowrap;
+    list-style: none;
+    /* overflow: hidden; */
+}
+
+.nav-list li {
+    /* width: min-content; */
+    flex-shrink: 1; 
+    flex-grow: 1;
+}
+
+h1 {
+    color: blue;
+}
+
+.cards {
+    display: flex;
+    align-items: flex-end;
+    gap: 2rem;
+    overflow-x: scroll;
+    flex-direction: column;
+    /* overflow-x: hidden; */
+    /* width: 800px; */
+}
+
+.card {
+    /* width: max-content; */
+    background-color: blueviolet;
+}
+
+.cards > * {
+    /* flex: 1; */
+    /* overflow-x: scroll; */
+    
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 450px;
+    /* width: 0px; */
+}
+
+::-webkit-scrollbar {
+display: none;
+
+}
+
+@media (min-width:480px) {
+    .cards {
+        flex-direction: row;
+    }
+}

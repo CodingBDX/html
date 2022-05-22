@@ -137,6 +137,10 @@ header {
     z-index: var(--z-fixed);
     transition:  .3s;
     }
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    }
     
 }
 
@@ -270,34 +274,35 @@ color: var(--text-color);
 @media only screen and (min-width: 320px) {
 
     .nav_list {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(4, 1fr);
     }
 
-}
+   
 
+}
 @media screen and (min-width: 968px) {
     body {
         margin: 3em 0;
     }
-.resume {
-    display: grid;
-    grid-template-columns: .5fr 1fr;
-    background-color: var(--container-color);
+
+    .resume {
+        display: grid;
+        grid-template-columns: .5fr 1fr;
+        background-color: var(--container-color);
+    }
+
+    .skills_link {
+
+        grid-template-columns: 5fr 1fr;
+
+    }
+
+
+    header {
+        display: none;
+    }
+
 }
-
-.skills_link {
-
-    grid-template-columns: 5fr 1fr;
-
-}
-
-
-header {
-    display: none;
-}
-
-}
-
 .education_content, .experience_content, .certification_content {
     display: flex;
 }
@@ -344,7 +349,7 @@ header {
 
 }
 
-.education-title, .skills-title, .experience-title, .certification-title  {
+.education-title, .skills-title, .experience-title, .certification-title, .workon-title  {
     text-transform: uppercase;
     text-align: center;
 }
@@ -352,4 +357,27 @@ header {
 .skills_link {
     display: grid;
        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .experience-education {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        
+    }
+
+    .workon_grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        background-color:var(--container-color-alt);
+       
+    }
+     .workon_link i {
+        font-size: 2.1em;
+        color: #707070;
+        padding-top: var(--mb-1);
+    }
+
+    .workon_link a {
+        font-size: 1.6em;
+        color: #707070;
     }
