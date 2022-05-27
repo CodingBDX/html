@@ -6,6 +6,7 @@
 dot.classList.toggle('active');
 sec.classList.toggle('active');
 
+
 }
 
     // change comportment event move on x axe

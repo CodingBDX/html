@@ -20,7 +20,7 @@ h1,h2,body,p {
 
     header {
         color: black !important;
-       
+       background-position: auto ;
     }
     header h1, h2{
         margin: .7em 0;
